@@ -44,18 +44,19 @@ It's purpose is to allow the user to register his profile, to search for patents
     * For get <b>CONSUMMER_KEY</b> and <b>CONSUMMER_SECRET_KEY</b> you will need to go on <a href="https://www.epo.org/searching-for-patents/data/web-services/ops.html">API OPS</a> and Sign Up
     * You can choose <b>JWT_SECRET</b> and <b>JWT_EXPIRATION_MS</b> yourself
     * For get <b>MAIL_HOST</b>, <b>MAIL_PORT</b>, <b>MAIL_USERNAME</b> and <b>MAIL_PASSWORD</b> you can use <a href="https://mailtrap.io/inboxes">MAILTRAP</a>
-      - Then you go to : -> <b>Inboxes</b> -> <b>My Inbox</b> -> <b>SMTP Settings</b> -> <b>Show Credentials</b>
+      - Then you go to : -> <b>My Inbox</b> -> <b>SMTP Settings</b> -> <b>Show Credentials</b>
     * If you are in local you can use `localhost` as <b>FRONT_SERVER_NAME</b> and `4200` as <b>FRONT_SERVER_PORT</b>
     * For <b>EPO_URL</b>, <b>PATENT_DATA_URL</b>, <b>PATENT_SEARCH_URL</b>, and <b>PATENT_SEARCH_URL</b> you can keep them as they are on <b>.env.model</b><br/>
     Note : On Windows: all variables must be inline separated by 1 space<br/>
     Note : Comments are not recommended on this file (That might provoke some problems to run the application)<br/>
-6. Import the last version of the <b>dataVx.sql</b> file into your database
+6. Create the database with the same name you gave in the <b>.env</b> file : `create database your_database_name;`
 7. To run the server of the application
    * On Linux : Run the command `sh ./env_spring_boot_run.sh`
    * On Windows :  
      - Open Git Bash
      - Go to the root directory of the project <b>PIScope</b>
      - Run the command : `sh env_spring_boot_run.sh`
+8. Import the last version of the <b>dataVx.sql</b> file into your database
 
 #### II. To run the client, follow this steps
 
